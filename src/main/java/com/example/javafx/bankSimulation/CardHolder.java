@@ -1,4 +1,4 @@
-package bankSimulation;
+package com.example.javafx.bankSimulation;
 
 import java.util.Scanner;
 
@@ -17,6 +17,7 @@ public class CardHolder implements Loader, Credit {
 		this.bankBills = bankBills;
 		this.password = password;
 	}
+
 
 	@Override
 	public void getCredit() {
@@ -39,9 +40,9 @@ public class CardHolder implements Loader, Credit {
 	}
 
 
-//	public int getId() {
-//		return id;
-//	}
+	public String getId() {
+		return id;
+	}
 
 	public int getPassword() {
 		return password;

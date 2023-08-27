@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<?import java.net.URL?>
+<?import javafx.scene.text.Text?>
+
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.layout.AnchorPane?>
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml" style="-fx-background-color: #efefdf"
+      fx:controller="com.example.javafx.bankSimulation.ATMMain">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+<!--    <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">-->
+<!--        <children>-->
+<!--            <ImageView fitHeight="400.0" fitWidth="600.0">-->
+<!--                <image>-->
+<!--                    <Image url="@istockphoto-1460902071-2048x2048.jpg" />-->
+<!--                </image>-->
+<!--            </ImageView>-->
+<!--        </children>-->
+<!--    </AnchorPane>-->
+    <Text text="Добрый день,вас приветствует симулятор банка!" />
+            <Button layoutX="250.0" layoutY="180.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" text="get card" fx:id="getCard" onAction="#getCard">
+                <font>
+                    <javafx.scene.text.Font size="14.0" />
+                </font>
+                <stylesheets>
+                    <URL value="@styles.css" />
+                </stylesheets>
+            </Button>
+
+    <Button text="Посмотреть всех клиентов банка" layoutX="450.0" layoutY="180.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="300.0"  onAction="#showAllUsers" />
+    <Text fx:id="allCardholders" />
+    <Label fx:id="welcomeText"/>
+
+
+
+</VBox>

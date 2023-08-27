@@ -1,4 +1,4 @@
-package bankSimulation;
+package com.example.javafx.bankSimulation;
 
 import java.io.*;
 import java.util.*;
@@ -6,11 +6,11 @@ import java.util.*;
 public class Bank implements Loader {
 	public String nameCompany;
 	public int atmBalance;
-	public List<CardHolder> cardHolders = new LinkedList<>();
+	public CardHolder cardHolders;
 	public ATM optimaATM;
 	Scanner scan = new Scanner(System.in);
 	Random random = new Random();
-	BufferedReader reader = new BufferedReader(new FileReader("src/bankSimulation/user_dataBase.txt"));
+	BufferedReader reader = new BufferedReader(new FileReader("C:\\Users\\Asus\\IdeaProjects\\javafx\\src\\main\\java\\com\\example\\javafx\\bankSimulation\\user_dataBase.txt"));
 	List<String> lines = new ArrayList<>();
 	private Map<String, String> registeredUsers = new HashMap<>();
 	private BankBills bankBills;
@@ -22,16 +22,37 @@ public class Bank implements Loader {
 		this.optimaATM = new ATM(cardHolders, bankBills, atmBalance);
 	}
 
+
+
+// ...
+
+	public String showCardholders() throws IOException {
+	String cardholderInfoList = "";
+
+		BufferedReader reader = new BufferedReader(new FileReader("C:\\Users\\Asus\\IdeaProjects\\javafx\\src\\main\\java\\com\\example\\javafx\\bankSimulation\\user_dataBase.txt"));
+		String line;
+		while ((line = reader.readLine()) != null) {
+			String[] parts = line.split(" ");
+			if (parts.length == 3) {
+
+				String userNameFromFile = parts[0];
+				cardholderInfoList += userNameFromFile.toUpperCase() + ", ";
+			}
+		}
+		return cardholderInfoList;
+	}
+
+
 	public boolean checkUserRegister(User user) throws IOException, InterruptedException {
-		try (BufferedReader reader = new BufferedReader(new FileReader("src/bankSimulation/user_dataBase.txt"))) {
+		try (BufferedReader reader = new BufferedReader(new FileReader("C:\\Users\\Asus\\IdeaProjects\\javafx\\src\\main\\java\\com\\example\\javafx\\bankSimulation\\user_dataBase.txt"))) {
 			String line;
 			while ((line = reader.readLine()) != null) {
 				String[] parts = line.split(" ");
-				if (parts.length == 4) {
-					String userLineNumber = parts[0];
-					String userNameFromFile = parts[1];
-					String userIdFromFile = parts[2];
-					String userSalary = parts[3];
+				if (parts.length == 3){
+
+					String userNameFromFile = parts[0];
+					String userIdFromFile = parts[1];
+					String userSalary = parts[2];
 					if (userNameFromFile.equals(user.name)) {
 						Loader.Loading();
 						return true;
@@ -58,7 +79,7 @@ public class Bank implements Loader {
 			System.out.println("придумайте пароль для карты");
 			int passOfCard = scan.nextInt();
 			CardHolder newCardHolder = new CardHolder(user.name, newID, bankBills, passOfCard);
-			cardHolders.add(newCardHolder);
+//			cardHolders.add(newCardHolder);
 			String newUserLine = user.name + " " + newID + " " + passOfCard;
 			lines.add(newUserLine);
 
@@ -75,24 +96,11 @@ public class Bank implements Loader {
 
 
 	public boolean saveDataToFile(User user) throws IOException {
-		BufferedReader reader = new BufferedReader(new FileReader("src/bankSimulation/user_dataBase.txt"));
-		String line;
-		int userLineNumber = 0;
-		while (( line = reader.readLine()) != null) {
-			String[] parts = line.split(" ");
-			if (parts.length == 4) {
-				 userLineNumber = Integer.parseInt(parts[0]);
-			}
-		}
-			try (BufferedWriter writer = new BufferedWriter(new FileWriter("src/bankSimulation/user_dataBase.txt"))) {
-
+		try (BufferedWriter writer = new BufferedWriter(new FileWriter("C:\\Users\\Asus\\IdeaProjects\\javafx\\src\\main\\java\\com\\example\\javafx\\bankSimulation\\user_dataBase.txt", true))) {
 			for (String line1 : lines) {
-				writer.write(userLineNumber + ": " + line1);
+				writer.write(line1);
 				writer.newLine();
-				userLineNumber++;
-
 			}
-
 		} catch (IOException e) {
 			throw new RuntimeException(e);
 		}

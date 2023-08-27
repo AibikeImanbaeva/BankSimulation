@@ -1,4 +1,4 @@
-package bankSimulation;
+package com.example.javafx.bankSimulation;
 
 public interface Loader {
 	public static void Loading() throws InterruptedException {

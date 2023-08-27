@@ -1,4 +1,4 @@
-package bankSimulation;
+package com.example.javafx.bankSimulation;
 
 public class BankBills {
     private int balance;

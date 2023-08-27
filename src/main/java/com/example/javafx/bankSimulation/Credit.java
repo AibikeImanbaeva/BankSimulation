@@ -1,4 +1,4 @@
-package bankSimulation;
+package com.example.javafx.bankSimulation;
 
 import java.io.IOException;
 

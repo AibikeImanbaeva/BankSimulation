@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6991e399-deea-4b21-97e1-59e8aad1115f" name="Changes" comment="">
+    <list default="true" id="6991e399-deea-4b21-97e1-59e8aad1115f" name="Changes" comment="Pomenyal puti">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javafx/bankSimulation/ATMMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javafx/bankSimulation/ATMMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javafx/bankSimulation/Bank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javafx/bankSimulation/Bank.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +72,7 @@
     <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.javafx.HelloApplication" />
       <module name="javafx" />
-      <option name="VM_PARAMETERS" value="--module-path &quot;C:\Users\Asus\Desktop\javafx-sdk-17.0.8\lib&quot; --add-modules javafx.controls,javafx.fxml" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;D:\FxProject\openjfx-20.0.2_windows-x64_bin-sdk\javafx-sdk-20.0.2\lib&quot; --add-modules javafx.controls,javafx.fxml" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.example.javafx.*" />
@@ -122,7 +120,30 @@
       <option name="presentableId" value="Default" />
       <updated>1693132495315</updated>
     </task>
+    <task id="LOCAL-00001" summary="Pomenyal puti">
+      <created>1693201297606</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1693201297606</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Pomenyal puti" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pomenyal puti" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/javafx$HelloApplication.ic" NAME="HelloApplication Coverage Results" MODIFIED="1693134256467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

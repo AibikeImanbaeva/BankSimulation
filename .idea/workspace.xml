@@ -4,13 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="6991e399-deea-4b21-97e1-59e8aad1115f" name="Changes" comment="">
+=======
+    <list default="true" id="6991e399-deea-4b21-97e1-59e8aad1115f" name="Changes" comment="Pomenyal puti">
+>>>>>>> 9cbacaed93f043cc3ce3f4cdc06a6fd5d221a53b
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2UZ1sLxrLROUeICgyBscIHVTjMC" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -23,7 +33,15 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+<<<<<<< HEAD
     &quot;last_opened_file_path&quot;: &quot;C:/Users/Asus/IdeaProjects/javafx/src/main/java&quot;,
+=======
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Asus/IdeaProjects/javafx/src/main/java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+>>>>>>> 9cbacaed93f043cc3ce3f4cdc06a6fd5d221a53b
     &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.tabs&quot;
   }
 }</component>
@@ -62,7 +80,7 @@
     <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.javafx.HelloApplication" />
       <module name="javafx" />
-      <option name="VM_PARAMETERS" value="--module-path &quot;C:\Users\Asus\Desktop\javafx-sdk-17.0.8\lib&quot; --add-modules javafx.controls,javafx.fxml" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;D:\FxProject\openjfx-20.0.2_windows-x64_bin-sdk\javafx-sdk-20.0.2\lib&quot; --add-modules javafx.controls,javafx.fxml" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.example.javafx.*" />
@@ -80,14 +98,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="All in javafx" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javafx" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.ATMMain" />
       <item itemvalue="Application.HelloApplication" />
+      <item itemvalue="JUnit.All in javafx" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.HelloApplication" />
         <item itemvalue="Application.ATMMain" />
+        <item itemvalue="JUnit.All in javafx" />
       </list>
     </recent_temporary>
   </component>
@@ -100,18 +128,30 @@
       <option name="presentableId" value="Default" />
       <updated>1693132495315</updated>
     </task>
+    <task id="LOCAL-00001" summary="Pomenyal puti">
+      <created>1693201297606</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1693201297606</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/javafx/bankSimulation/ATM.java</url>
-          <line>17</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Pomenyal puti" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pomenyal puti" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/javafx$HelloApplication.ic" NAME="HelloApplication Coverage Results" MODIFIED="1693134256467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

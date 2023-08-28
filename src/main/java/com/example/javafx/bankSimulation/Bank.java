@@ -10,7 +10,7 @@ public class Bank implements Loader {
 	public ATM optimaATM;
 	Scanner scan = new Scanner(System.in);
 	Random random = new Random();
-	BufferedReader reader = new BufferedReader(new FileReader("C:\\Users\\Asus\\IdeaProjects\\javafx\\src\\main\\java\\com\\example\\javafx\\bankSimulation\\user_dataBase.txt"));
+	BufferedReader reader = new BufferedReader(new FileReader("src/main/java/com/example/javafx/bankSimulation/user_dataBase.txt"));
 	List<String> lines = new ArrayList<>();
 	private Map<String, String> registeredUsers = new HashMap<>();
 	private BankBills bankBills;
@@ -29,7 +29,7 @@ public class Bank implements Loader {
 	public String showCardholders() throws IOException {
 	String cardholderInfoList = "";
 
-		BufferedReader reader = new BufferedReader(new FileReader("C:\\Users\\Asus\\IdeaProjects\\javafx\\src\\main\\java\\com\\example\\javafx\\bankSimulation\\user_dataBase.txt"));
+		BufferedReader reader = new BufferedReader(new FileReader("src/main/java/com/example/javafx/bankSimulation/user_dataBase.txt"));
 		String line;
 		while ((line = reader.readLine()) != null) {
 			String[] parts = line.split(" ");
@@ -44,7 +44,7 @@ public class Bank implements Loader {
 
 
 	public boolean checkUserRegister(User user) throws IOException, InterruptedException {
-		try (BufferedReader reader = new BufferedReader(new FileReader("C:\\Users\\Asus\\IdeaProjects\\javafx\\src\\main\\java\\com\\example\\javafx\\bankSimulation\\user_dataBase.txt"))) {
+		try (BufferedReader reader = new BufferedReader(new FileReader("src/main/java/com/example/javafx/bankSimulation/user_dataBase.txt"))) {
 			String line;
 			while ((line = reader.readLine()) != null) {
 				String[] parts = line.split(" ");
@@ -96,7 +96,8 @@ public class Bank implements Loader {
 
 
 	public boolean saveDataToFile(User user) throws IOException {
-		try (BufferedWriter writer = new BufferedWriter(new FileWriter("C:\\Users\\Asus\\IdeaProjects\\javafx\\src\\main\\java\\com\\example\\javafx\\bankSimulation\\user_dataBase.txt", true))) {
+		try (BufferedWriter writer = new BufferedWriter(new FileWriter
+				("src/main/java/com/example/javafx/bankSimulation/user_dataBase.txt", true))) {
 			for (String line1 : lines) {
 				writer.write(line1);
 				writer.newLine();

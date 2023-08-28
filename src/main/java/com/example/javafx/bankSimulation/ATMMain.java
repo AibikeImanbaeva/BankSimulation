@@ -32,13 +32,13 @@ public class ATMMain {
 	}
 
 	private static BankBills loadBalanceFromFile() throws IOException {
-		BufferedReader reader = new BufferedReader(new FileReader("C:\\Users\\Asus\\IdeaProjects\\javafx\\src\\main\\java\\com\\example\\javafx\\bankSimulation\\balance.txt"));
+		BufferedReader reader = new BufferedReader(new FileReader("src/main/java/com/example/javafx/bankSimulation/balance.txt"));
 		int balance = Integer.parseInt(reader.readLine());
 		return new BankBills(balance, 0001);
 	}
 
 	private static void saveBalanceToFile(String balance) throws IOException {
-		BufferedWriter writer = new BufferedWriter(new FileWriter("C:\\Users\\Asus\\IdeaProjects\\javafx\\src\\main\\java\\com\\example\\javafx\\bankSimulation\\balance.txt"));
+		BufferedWriter writer = new BufferedWriter(new FileWriter("src/main/java/com/example/javafx/bankSimulation/balance.txt"));
 		writer.write(balance);
 		writer.close();
 	}
